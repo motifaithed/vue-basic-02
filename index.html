@@ -21,6 +21,8 @@
       <button v-on:click="add(accelerator)">Add {{ accelerator }}</button>
       <button v-on:click="remove(accelerator)">Remove {{ accelerator }}</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input="setName($event, 'Andaya')">
+      <p>Your Name: {{ name }}</p>
     </section>
   </body>
 </html>
