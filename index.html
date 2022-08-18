@@ -20,6 +20,7 @@
       <h2>Events in Action</h2>
       <button v-on:click="add(accelerator)">Add {{ accelerator }}</button>
       <button v-on:click.right="remove(accelerator)">Remove {{ accelerator }}</button>
+      <p v-once>Starting counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
       <input type="text" v-on:input="setName($event, 'Andaya')" v-on:keyup.enter = "confirmName">
       <p>Your Name: {{ confirmedName }}</p>
